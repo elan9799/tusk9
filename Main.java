@@ -71,8 +71,8 @@ class MyLinkedList { // список, цепочка элементов Item
 
     // удаляет первый элемент списка
     public void removeFirst() {
-        Item current = head;
         if(head != null){
+            Item current = head;
             head = current.next;
             current.next = null;
             head.prev = null;
